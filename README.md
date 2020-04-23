@@ -1,5 +1,5 @@
 # README
-##usersテーブル
+## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
 |email|string|null: false|
@@ -10,7 +10,7 @@
 - has_many :groups_users
 - has_many :groups, through:  :guroups_users
 
-##messagesテーブル
+## messagesテーブル
 |Column|Type|Options|
 |------|----|-------|
 |body|text|null: false|
@@ -21,7 +21,7 @@
 - belongs_to :user
 - belongs_to :group
 
-##groupsテーブル
+## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
 |group_name|string|null: false|
@@ -31,7 +31,7 @@
 - has_many :groups_users
 - has_many :users, through:  groups_users
 
-##groups_usersテーブル
+## groups_usersテーブル
 |Column|Type|Options|
 |------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
