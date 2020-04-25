@@ -1,0 +1,51 @@
+.ChatMain
+  .ChatMain__info
+    .ChatMain_LeftBox
+      .CurrentGroup
+        チャットグループ
+      .MemberList
+        Member : ABCD
+    .EditBtn
+      = link_to 'Edit', '#'
+
+  .ChatMain__message
+    .MessageBox
+      .NameBox
+        ABCD
+        .DateBox
+          2020/04/25(sat) 00:04:13
+      .InputText  
+        おはよう
+    .MessageBox
+      .NameBox
+        ABCD
+        .DateBox
+          2020/04/25(sat) 00:04:14
+      .InputText  
+        こんにちは
+    .MessageBox
+      .NameBox
+        ABCD
+        .DateBox
+          2020/04/25(sat) 00:04:15
+      .InputText  
+        こんばんは
+    .MessageBox
+      .NameBox
+        ABCD
+        .DateBox
+          2020/04/25(sat) 00:04:16
+      .InputText  
+        おやすみ
+
+  .ChatMain__form
+    .InputBox 
+      %input.InputBox__text{:placeholder => "type a message", :type => "text",}/
+      .InputBox__image
+        %label{class: "input-box__image"}
+          = icon('far', 'image fa-lg')
+          %input{type: "file",class: "sentaku"}
+
+       
+    .SubmitBtn
+      Send
