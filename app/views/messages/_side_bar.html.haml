@@ -1,0 +1,17 @@
+.SideBar
+  .SideBar__UserName
+    .TopItems
+      .TopItems__name
+        ABCD
+      .TopItems__icon
+        = link_to "#", class: "TopItems__btn TopItems__btn--write" do
+          = icon('far' , 'edit', class: "TopItems__icon--btn")
+        = link_to "#", class: "TopItems__btn TopItems__btn--setting"  do
+          = icon('fas' , 'cog', class: "TopItems__icon--btn")
+  .SideBar__GroupList
+    .SideBar_GroupTop
+      .GroupName
+        techcamp
+      .GroupMessage
+        まだメッセージがありません
+
