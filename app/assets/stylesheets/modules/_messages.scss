@@ -167,12 +167,13 @@ $moji: #ffffff;
     .SubmitBtn {
       background-color: #38aef0;
       height: 50px;
-      width: 100px;
+      width: 160px;
       margin-right: 40px;
       color: $moji;
       font-size: 15px;
       text-align: center;
       line-height: 50px;
+      cursor: pointer;
     }    
   }
 }

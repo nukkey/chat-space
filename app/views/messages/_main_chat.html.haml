@@ -38,14 +38,12 @@
       .InputText  
         おやすみ
 
-  .ChatMain__form
-    .InputBox 
-      %input.InputBox__text{:placeholder => "type a message", :type => "text",}/
-      .InputBox__image
-        %label{class: "input-box__image"}
-          = icon('far', 'image fa-lg')
-          %input{type: "file",class: "sentaku"}
-
-       
-    .SubmitBtn
-      Send
+  = form_for [@group, @message] do |f|
+    .ChatMain__form
+      .InputBox 
+        = f.text_field :content, class: 'InputBox__text', placeholder: 'type a message'
+        .InputBox__image
+          = f.label :image, class: 'input-box__image' do
+            = icon('far', 'image fa-lg')
+            = f.file_field :image, class: 'sentaku'
+      = f.submit 'Send', class: 'SubmitBtn'
