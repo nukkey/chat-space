@@ -52,12 +52,14 @@ $moji: #ffffff;
           font-size: 15px;
           line-height: 15px;
           margin-bottom: 5px;
+          color: $moji;
         }
         .GroupMessage {
           height: 11px;
           width: 260px;
           font-size: 11px;
           line-height: 11px;
+          color: $moji;
         }
       }
    }

@@ -4,14 +4,16 @@
       .TopItems__name
         = current_user.name
       .TopItems__icon
-        = link_to "#", class: "TopItems__btn TopItems__btn--write" do
+        = link_to new_group_path do
           = icon('far' , 'edit', class: "TopItems__icon--btn")
         = link_to edit_user_path(current_user)  do
           = icon('fas' , 'cog', class: "TopItems__icon--btn")
   .SideBar__GroupList
-    .SideBar_GroupTop
-      .GroupName
-        techcamp
-      .GroupMessage
-        まだメッセージがありません
+    - current_user.groups.each do |group|
+      .SideBar_GroupTop
+        = link_to '#' do
+          .GroupName
+            = group.name
+          .GroupMessage
+            まだメッセージがありません
 
