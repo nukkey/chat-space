@@ -6,7 +6,7 @@
       .MemberList
         Member : ABCD
     .EditBtn
-      = link_to 'Edit', '#'
+      = link_to "Edit", edit_group_path(@group.id)
 
   .ChatMain__message
     = render @messages
