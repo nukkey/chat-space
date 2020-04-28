@@ -9,34 +9,8 @@
       = link_to 'Edit', '#'
 
   .ChatMain__message
-    .MessageBox
-      .NameBox
-        ABCD
-        .DateBox
-          2020/04/25(sat) 00:04:13
-      .InputText  
-        おはよう
-    .MessageBox
-      .NameBox
-        ABCD
-        .DateBox
-          2020/04/25(sat) 00:04:14
-      .InputText  
-        こんにちは
-    .MessageBox
-      .NameBox
-        ABCD
-        .DateBox
-          2020/04/25(sat) 00:04:15
-      .InputText  
-        こんばんは
-    .MessageBox
-      .NameBox
-        ABCD
-        .DateBox
-          2020/04/25(sat) 00:04:16
-      .InputText  
-        おやすみ
+    = render @messages
+
 
   = form_for [@group, @message] do |f|
     .ChatMain__form

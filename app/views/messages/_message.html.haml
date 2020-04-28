@@ -1,0 +1,10 @@
+.MessageBox
+  .NameBox
+    = message.user.name
+    .DateBox
+      = message.created_at.strftime("%Y年%m月%d日 %H時%M分")
+  .InputText  
+    - if message.content.present?
+      %p.InputText__content
+        = message.content
+= image_tag message.image.url, class: 'InputText__image' if message.image.present?
