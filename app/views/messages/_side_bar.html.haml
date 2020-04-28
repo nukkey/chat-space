@@ -6,14 +6,14 @@
       .TopItems__icon
         = link_to new_group_path do
           = icon('far' , 'edit', class: "TopItems__icon--btn")
-        = link_to edit_user_path(current_user)  do
+        = link_to edit_user_path(current_user) do
           = icon('fas' , 'cog', class: "TopItems__icon--btn")
   .SideBar__GroupList
     - current_user.groups.each do |group|
       .SideBar_GroupTop
-        = link_to '#' do
+        = link_to group_messages_path(group) do
           .GroupName
             = group.name
           .GroupMessage
-            まだメッセージがありません
+            = group.show_last_message
 
