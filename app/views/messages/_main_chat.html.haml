@@ -2,9 +2,12 @@
   .ChatMain__info
     .ChatMain_LeftBox
       .CurrentGroup
-        チャットグループ
+        = @group.name
       .MemberList
-        Member : ABCD
+        Member :
+        .MemberList--name
+          - @group.users.each do |user|
+            = user.name
     .EditBtn
       = link_to "Edit", edit_group_path(@group.id)
 

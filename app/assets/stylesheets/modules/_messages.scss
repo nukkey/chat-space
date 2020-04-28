@@ -89,6 +89,14 @@ $moji: #ffffff;
         font-size: 12px;
         color: #999999;
         margin-top: 17px;
+        line-height: 12px;
+        display: flex;
+        &--name {
+          font-size: 12px;
+          color: #999999;
+          margin-left: 10px;
+
+        }
       }
     }
     .EditBtn a{
