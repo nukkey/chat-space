@@ -34,7 +34,7 @@ $(function(){
        </div>`
      return html;
    };
- }
+  }
 $('#new_message').on('submit', function(e){
   e.preventDefault();
   var formData = new FormData(this);
@@ -56,7 +56,7 @@ $('#new_message').on('submit', function(e){
    })
    .fail(function() {
     alert('メッセージ送信に失敗しました');
-  });
+   });
   return false;
-})
+ })
 });
