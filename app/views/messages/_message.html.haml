@@ -7,4 +7,4 @@
     - if message.content.present?
       %p.InputText__content
         = message.content
-= image_tag message.image.url, class: 'InputText__image' if message.image.present?
+    = image_tag message.image.url, class: 'InputText__image' if message.image.present?
