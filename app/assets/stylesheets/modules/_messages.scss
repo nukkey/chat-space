@@ -114,8 +114,8 @@ $moji: #ffffff;
     padding: 44px 40px;
     overflow: scroll;
     .MessageBox {
-      height: 95px;
       width: 700px;
+      padding-bottom: 40px;;
       .NameBox {
         height: 16px;
         color: #333333;
@@ -129,9 +129,7 @@ $moji: #ffffff;
           float: right;
         }
   }
-
       .InputText {
-        height: 63px;
         margin: 12px auto;
         font-size: 14px;
         color: #434a54;
